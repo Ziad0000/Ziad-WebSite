@@ -1,0 +1,134 @@
+*{
+    font-family: 'poppiins','sans-serif';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    background: #edf2fc;
+    position: relative;
+    /*
+    background-image: url(images/R.jfif);
+    */
+}
+
+
+.logo{
+    color: #3a6cf4;
+    text-decoration: none;
+    display: flex;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+nav{
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:#4e9eff;
+}
+
+nav ul li a:hover{
+    color: red;
+}
+
+.info{
+    margin-left: 8%;
+    margin-top: 15%;
+}
+
+.info h1{
+    font-size: 70px;
+    color: #4e9eff;
+    margin-bottom: 20px;
+}
+
+span{
+    color:salmon;
+}
+
+.info p{
+    color: #606163;
+    line-height: 22px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.info a{
+    color: #fff;
+    background-color: #3a6cf4;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 10px 18px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    border-radius: 15px;
+    margin: 30px 0;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+}
+
+.info a:hover{
+    background-color: #0a49f6;
+    transform: scale(1.1);
+}
+
+.image-box{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.image-box img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.image-box:hover .back-image{
+    bottom: 40px;
+}
+
+.image-box:hover .main-image{
+    left: 54%;
+}
+
+.social-links{
+    margin-left: 8%;
+    margin-top: 100px;
+}
+
+.social-links a{
+    font-size: 30px;
+    color: #606163;
+    margin-right: 20px;
+}
+
+.social-links a:hover{
+    color: #3a6cf4;
+}
