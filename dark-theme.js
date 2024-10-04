@@ -124,3 +124,8 @@ window.onload = () => {
     changeLanguage(savedLanguage);
 };
 
+function toggleMenu() {
+    const navLinks = document.getElementById('nav-links');
+    const navLinks2 = document.getElementById('nav-links2');
+    navLinks.classList.toggle('show');
+}
