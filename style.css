@@ -357,6 +357,10 @@ section{
         padding: 80px 20px;
     }
 
+    .main{
+        padding: -300px 20px;
+    }
+
     .main-content h2{
         font-size: 1em;
     }
@@ -395,10 +399,10 @@ section{
 
 @media(max-width:667px){
     .image-box img{
+        display: block;
         max-width: 100%;
         max-height: 50%;
-        top: 50%;
-        left: 1px;
+        padding: 20px 10px;
         transform: translateX(-50%);
         transition: bottom 5s, left 5s;
     }
@@ -466,19 +470,99 @@ section{
     display: block;
 }
 
+.icon{
+    display: none;
+}
 
 
+/* Base styles for all devices */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+}
 
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
 
+.navigation {
+    display: flex;
+    align-items: center;
+}
 
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
 
+.navigation li {
+    margin: 0 10px;
+}
 
+.navigation a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
 
+.icon {
+    display: none;
+}
+.icon2{
+    display: none;
+}
 
+/* Mobile styles */
+@media (max-width: 768px) {
+    .navigation ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
 
+    .navigation ul.show {
+        display: flex;
+    }
 
+    .icon {
+        display: block;
+        background: none;
+        border: none;
+        color: var(--accent-color);
+        font-size: 24px;
+    }
+    .icon2{
+        display: none;
+        background: none;
+        border: none;
+        color: var(--accent-color);
+        font-size: 24px;
+    }
 
+    .navigation ul {
+        margin: 20px 100px;
+    }
+    #theme-switch{
+        display: block;
+        left: 270px;
 
-
-
+    }
+    #language ul{
+        display: block;
+        left: 270px;
+    }
+}
